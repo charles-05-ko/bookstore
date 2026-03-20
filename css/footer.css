@@ -15,7 +15,9 @@ footer {
 #notice #notice_box {
     width: 1200px;    
     height: 60px;
-    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #bottom {

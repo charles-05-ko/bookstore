@@ -4,7 +4,7 @@ main {
     width: 1200px;
     height: 3100px;
     margin: 0 auto;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 }
 
 
@@ -50,6 +50,27 @@ main {
     background-color: tomato;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* main category */
 #main_cat {
     width: 1200px;
@@ -68,7 +89,7 @@ main {
 #main_cat #main_cat_add {
     width: 250px;
     height: 100px;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 /* today_pick */
@@ -83,7 +104,21 @@ main {
     width: 1200px;
     height: 40px;
     margin: 0 0 30px 0;
-    background-color: tomato;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#today_pick #today_pick_title h2 {
+    padding: 0 30px 0 0;
+}
+
+#today_pick #today_pick_title ul{
+    display: flex;
+}
+
+#today_pick #today_pick_title ul li{
+    padding: 10px;
 }
 
 #today_pick #today_pick_sub1 {
@@ -92,11 +127,53 @@ main {
     background-color: tomato;
 }
 
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
 #today_pick #today_pick_sub2 {
     width: 400px;
     height: 250px;
     background-color: tomato;
 }
+
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
 /* add1 */
 #add1 {
@@ -108,13 +185,13 @@ main {
 #add1 #add1_pic1 {
     width: 590px;
     height: 180px;
-    background-color: blue;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 #add1 #add1_pic2 {
     width: 590px;
     height: 180px;
-    background-color: blue;
 }
 
 /* more book */
@@ -127,7 +204,9 @@ main {
     width: 1200px;
     height: 40px;
     margin: 0 0 30px 0;
-    background-color: tomato;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #morebook #morebook_slider {
@@ -135,6 +214,27 @@ main {
     height: 320px;
     background-color: tomato;
 }
+
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
 /* choice book */
 #choice {
@@ -146,7 +246,6 @@ main {
     width: 1200px;
     height: 40px;
     margin: 0 0 30px 0;
-    background-color: blue;
 }
 
 #choice #choice_slider {
@@ -165,7 +264,21 @@ main {
     width: 1200px;
     height: 40px;
     margin: 0 0 30px 0;
-    background-color: tomato;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#mdpick #mdpick_title h2 {
+    padding: 0 20px 0 0;
+}
+
+#mdpick #mdpick_title ul {
+    display: flex;
+}
+
+#mdpick #mdpick_title ul li {
+    padding: 10px;
 }
 
 #mdpick #mdpick_slider {
@@ -173,6 +286,27 @@ main {
     height: 280px;
     background-color: tomato;
 }
+
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
 /* add2 */
 #add2 {
