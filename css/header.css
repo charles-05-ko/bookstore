@@ -1,0 +1,147 @@
+@charset "UTF-8";
+header {
+    width: 100%;
+    height: 300px;
+}
+
+/* header add */
+#header_add {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+/* header top */
+#header_top{
+    display: flex;
+    justify-content: center;
+}
+
+#header_top #top_cat {
+    width: 750px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    /* background-color: orange; */
+}
+
+#header_top #top_cat ul {
+    display: flex;
+    justify-content: end;
+}
+
+#header_top #top_cat ul li {
+    margin: 0 10px 0;
+}
+
+#header_top #top_login {
+    width: 450px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    /* background-color: green; */
+}
+
+#header_top #top_login ul {
+    display: flex;
+    justify-content: end;
+    font-size: 12px;
+}
+
+#header_top #top_login ul li {
+    margin: 0 5px 0;
+}
+
+/* header main */
+#header_main {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header_main #top_logo{
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: left;
+    /* background-color: gray; */
+}
+
+#header_main #top_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+#header_main #top_nav{
+    width: 600px;
+    height: 80px;
+    background-color: blue;
+}
+
+#header_main #top_profile{
+    width: 300px;
+    height: 80px;
+    background-color: yellow;
+}
+
+/* header category */
+#header_cat {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header_cat #hamburger {
+    width: 50px;
+    height: 90px;
+    background-color: purple;
+}
+
+#header_cat #header_cat_main {
+    width: 1100px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: gray; */
+}
+
+#header_cat #header_cat_main #header_cat_cat {
+    width: 700px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_cat #header_cat_main #header_cat_cat ul{
+    display: flex;
+    font-size: 16px;
+}
+
+#header_cat #header_cat_main #header_cat_cat ul li {
+    margin: 0 8px 0;
+}
+
+#header_cat #header_cat_main #header_mission {
+    width: 300px;
+    height: 90px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#header_cat #header_cat_main #header_mission ul {
+    display: flex;
+    font-size: 14px;
+}
+
+#header_cat #header_cat_main #header_mission ul li {
+    margin: 8px;
+}

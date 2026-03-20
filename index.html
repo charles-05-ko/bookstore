@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>교보 문고</title>
+    <title>교보문고</title>
 
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
 </head>
 
 <body>
     <header>
-        <!-- 최상단 광고 -->
-        <div id="top">
-            <img src="./img/header_top_img.jpg" alt="add"><a href="#"></a></img>
+        <div id="header_add">
+            <img src="./img/header_top_img.jpg" alt="add">
         </div>
-        <!-- 카테고리1 -->
-        <div id="top_category">            
-            <div class="one"><ul>
-                <li><a href="#">교보문고</a></li>
-                <li><a href="#">eBook</a></li>
-                <li><a href="#">sam</a></li>
-                <li><a href="#">핫트랙스</a></li>
-                <li><a href="#">스토리</a></li>
-                <li><a href="#">6</a></li>
-                <button>브랜드 더보기</button>
-            </ul></div>
-            <div class="two">
+        <div id="header_top">
+            <div id="top_cat">
+                <ul>
+                    <li><a href="#">교보문고</a></li>
+                    <li><a href="#">eBook</a></li>
+                    <li><a href="#">sam</a></li>
+                    <li><a href="#">핫트랙스</a></li>
+                    <li><a href="#">스토리</a></li>
+                    <li><a href="#">브랜드 더보기</a></li>
+                </ul>
+            </div>
+            <div id="top_login">
                 <ul>
                     <li><a href="#">회원가입</a></li>
                     <li><a href="#">로그인</a></li>
@@ -38,63 +42,117 @@
                 </ul>
             </div>
         </div>
-        <!-- 네비게이션 -->
-        <nav>
-            <div class="one">1</div>
-            <div class="two">2</div>
-        </nav>
-        <!-- 카테고리2 -->
-        <div id="bottom_category">
-            <div class="box1"><button>메뉴</button></div>
-            <div class="box2">
-                <div class="box2_1">
+        <div id="header_main">
+            <div id="top_logo">
+                <img src="./img/logo_book.svg" alt="">
+            </div>
+            <div id="top_nav"></div>
+            <div id="top_profile"></div>
+        </div>
+        <div id="header_cat">
+            <div id="hamburger"></div>
+            <div id="header_cat_main">
+                <div id="header_cat_cat">
                     <ul>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">9</a></li>
+                        <li><a href="#">오늘부터 1권</a></li>
+                        <li><a href="#">새학기혜택</a></li>
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">바로펀딩</a></li>
+                        <li><a href="#">PICKS</a></li>
+                        <li><a href="#">CASTing</a></li>
+                        <li><a href="#">컬쳐라운지</a></li>
                     </ul>
                 </div>
-                <div class="box2_2"></div>
+                <div id="header_mission">
+                    <ul>
+                        <li><a href="#">오늘의 미션</a></li>
+                        <li><a href="#">할인혜택</a></li>
+                        <li><a href="#">세계 시의 날</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
-
-
-
-
-    <div id="main">
-        <div id="slider1">
-            <div class="box1"></div>
-            <div class="box2"></div>
+    <main>
+        <div id="main_slider">
+            <div id="main_slider_add1">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div id="main_slider_add2"></div>
         </div>
-        <div id="category">
-            .icon
+        <div id="main_cat">
+            <div id="main_cat_icon"></div>
+            <div id="main_cat_add"></div>
         </div>
-        <div id="add1"></div>
-        <div id="add2"></div>
-        <div id="slider2"></div>
-        <div id="slider3"></div>
-        <div id="add3"></div>
-        <div id="picks"></div>
-        <div id="best"></div>
-        <div id="slider4"></div>
-        <div id="slider5"></div>
-        <div id="add4"></div>
-        <div id="slider6"></div>
-        <div id="slider7"></div>
-        <div id="casting"></div>
-        <div id="add5"></div>
-    </div>
+        <div id="today_pick">
+            <div id="today_pick_title"></div>
+            <div id="today_pick_sub1"></div>
+            <div id="today_pick_sub2"></div>
+        </div>
+        <div id="add1">
+            <div id="add1_pic1"></div>
+            <div id="add1_pic2"></div>
+        </div>
+        <div id="morebook">
+            <div id="morebook_title"></div>
+            <div id="morebook_slider"></div>
+        </div>
+        <div id="choice">
+            <div id="choice_title"></div>
+            <div id="choice_slider"></div>
+        </div>
+        <div id="mdpick">
+            <div id="mdpick_title"></div>
+            <div id="mdpick_slider"></div>
+        </div>
+        <div id="add2">
+            <div id="add2_pic1"></div>
+            <div id="add2_pic2"></div>
+        </div>
+        <div id="AIpick">
+            <div id="AIpick_title"></div>
+            <div id="AIpick_list"></div>
+        </div>
+    </main>
     <footer>
-        <div id="notice"></div>
-        <div id="bottom"></div>
+        <div id="notice">
+            <div id="notice_box"></div>
+        </div>
+        <div id="bottom">
+            <div id="bottom_main"></div>
+            <div id="bottom_sub"></div>
+        </div>
     </footer>
+
+    <script></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
