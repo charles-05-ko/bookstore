@@ -49,12 +49,16 @@ header {
 #header_top #top_login ul {
     display: flex;
     justify-content: end;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 #header_top #top_login ul li {
-    margin: 0 5px 0;
+    margin: 0 10px 0;
 }
+
+#header_top #top_login ul li::after {content:"|"; float: right; margin-right: -10px;}
+
+#header_top #top_login ul li:last-child::after{content: "";}
 
 /* header main */
 #header_main {
@@ -81,13 +85,60 @@ header {
 #header_main #top_nav{
     width: 600px;
     height: 80px;
-    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    /* background-color: blue; */
+}
+
+.search-box {
+  width: 600px;
+  height: 54px;
+  border: 1px solid #cfcfcf;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  background-color: #fff;
+}
+
+.search-select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #222;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #222;
+  padding: 0 12px;
+}
+
+.search-input::placeholder {
+  color: #777;
+}
+
+.search-btn {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 #header_main #top_profile{
     width: 300px;
     height: 80px;
-    background-color: yellow;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    /* background-color: yellow; */
 }
 
 /* header category */

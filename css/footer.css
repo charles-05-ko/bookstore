@@ -30,7 +30,21 @@ footer {
 #bottom #bottom_main {
     width: 700px;
     height: 220px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+}
+
+#bottom #bottom_main p {
+    font-size: 12px;
+    padding: 5px;
+}
+
+#bottom #bottom_main ul {
+    display: flex;
+    font-size: 14px;
+}
+
+#bottom #bottom_main ul li {
+    padding: 5px;
 }
 
 #bottom #bottom_sub {

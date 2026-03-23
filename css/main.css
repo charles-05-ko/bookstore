@@ -2,7 +2,7 @@
 
 main {
     width: 1200px;
-    height: 3100px;
+    height: 2700px;
     margin: 0 auto;
     /* background-color: greenyellow; */
 }
@@ -20,7 +20,6 @@ main {
 #main_slider #main_slider_add1 {
     width: 900px;
     height: 100%;
-    background-color: tomato;
 }
 
 .swiper {
@@ -46,13 +45,14 @@ main {
 
 #main_slider #main_slider_add2 {
     width: 250px;
-    height: 100%;
-    background-color: tomato;
+    height: 400px;
+    display: flex;
+    /* background-color: tomato; */
 }
 
-.swiper {
+#main_slider_add2 .swiper {
     width: 100%;
-    height: 100%;
+    height: 250px;
 }
 
 .swiper-slide {
@@ -83,7 +83,20 @@ main {
 #main_cat #main_cat_icon {
     width: 900px;
     height: 100px;
-    background-color: blue;
+
+    /* background-color: blue; */
+}
+
+#main_cat #main_cat_icon ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main_cat #main_cat_icon ul li p {
+    display: flex;
+    justify-content: center;
 }
 
 #main_cat #main_cat_add {
@@ -115,35 +128,52 @@ main {
 
 #today_pick #today_pick_title ul{
     display: flex;
+    font-size: 14px;
 }
 
 #today_pick #today_pick_title ul li{
     padding: 10px;
 }
 
+#today_pick #today_pick_title ul li::after {
+    content: "|";
+    float: right;
+    margin: 0 -12px;
+}
+
+#today_pick #today_pick_title ul li:last-child::after {
+    content: "";
+}
+
+#today_pick #today_pick_sub{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
 #today_pick #today_pick_sub1 {
     width: 750px;
     height: 250px;
-    background-color: tomato;
 }
 
-.swiper {
+#today_pick_sub1 .swiper {
       width: 100%;
       height: 100%;
     }
 
-    .swiper-slide {
+    #today_pick_sub1 .swiper-wrapper .swiper-slide {
       text-align: center;
-      font-size: 18px;
-      background: #444;
+      font-size: 20px;
+      /* background: #444; */
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    .swiper-slide img {
+    #today_pick_sub1 .swiper-wrapper .swiper-slide img {
       display: block;
-      width: 100%;
+      width: 180px;
       height: 100%;
       object-fit: cover;
     }
@@ -151,24 +181,23 @@ main {
 #today_pick #today_pick_sub2 {
     width: 400px;
     height: 250px;
-    background-color: tomato;
 }
 
-.swiper {
+#today_pick_sub2 .swiper-wrapper .swiper {
       width: 100%;
       height: 100%;
     }
 
-    .swiper-slide {
+    /* #today_pick_sub2 .swiper-wrapper .swiper-slide {
       text-align: center;
       font-size: 18px;
       background: #444;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
+    } */
 
-    .swiper-slide img {
+    #today_pick_sub2 .swiper-wrapper .swiper-slide img {
       display: block;
       width: 100%;
       height: 100%;
@@ -212,27 +241,28 @@ main {
 #morebook #morebook_slider {
     width: 1200px;
     height: 320px;
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 
-.swiper {
+#morebook_slider .swiper {
       width: 100%;
       height: 100%;
+      display: flex;
     }
 
-    .swiper-slide {
+    #morebook_slider .swiper-slide {
       text-align: center;
-      font-size: 18px;
-      background: #444;
-      display: flex;
+      font-size: 10px;
+      /* background: #444; */
+      /* display: flex; */
       justify-content: center;
       align-items: center;
     }
 
-    .swiper-slide img {
+    #morebook_slider .swiper-slide img {
       display: block;
       width: 100%;
-      height: 100%;
+      height: 250px;
       object-fit: cover;
     }
 
@@ -252,6 +282,12 @@ main {
     width: 1200px;
     height: 320px;
     background-color: blue;
+}
+
+#choice #choice_slider .choice_box {
+    width: 300px;
+    height: 320px;
+    background-color: tomato;
 }
 
 /* md's pick */
@@ -284,27 +320,27 @@ main {
 #mdpick #mdpick_slider {
     width: 1200px;
     height: 280px;
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 
-.swiper {
+#mdpick_slider .swiper-wrapper .swiper {
       width: 100%;
       height: 100%;
     }
 
-    .swiper-slide {
+    #mdpick_slider .swiper-wrapper .swiper-slide {
       text-align: center;
-      font-size: 18px;
-      background: #444;
-      display: flex;
+      font-size: 10px;
+      /* background: #444; */
+      /* display: flex; */
       justify-content: center;
       align-items: center;
     }
 
-    .swiper-slide img {
+    #mdpick_slider .swiper-wrapper .swiper-slide img {
       display: block;
       width: 100%;
-      height: 100%;
+      height: 250px;
       object-fit: cover;
     }
 

@@ -46,8 +46,26 @@
             <div id="top_logo">
                 <img src="./img/logo_book.svg" alt="">
             </div>
-            <div id="top_nav"></div>
-            <div id="top_profile"></div>
+            <div id="top_nav">
+                <div class="search-box">
+                    <select class="search-select">
+                        <option>통합검색</option>
+                        <option>국내도서</option>
+                        <option>외국도서</option>
+                        <option>eBook</option>
+                    </select>
+
+                    <input type="text" class="search-input" placeholder="스마트폰만 봤던 13살 아들을 바꾼 그 책!">
+
+                    <button class="search-btn" type="button" aria-label="검색">
+                        🔍
+                    </button>
+                </div>
+            </div>
+            <div id="top_profile">
+                <a href="#"><img src="./img/top_profile1.png" alt="profile" width="50px" height="50px"></a>
+                <a href="#"><img src="./img/top_profile2.png" alt="prodile" width="50px" height="50px"></a>
+            </div>
         </div>
         <div id="header_cat">
             <div id="hamburger"></div>
@@ -107,6 +125,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="./img/main_slider_add2_1.jpg" alt="add">
+                            <h3>안녕</h3>
                         </div>
                         <div class="swiper-slide">
                             <img src="./img/main_slider_add2_2.jpg" alt="add">
@@ -126,9 +145,22 @@
             </div>
         </div>
         <div id="main_cat">
-            <div id="main_cat_icon"></div>
+            <div id="main_cat_icon">
+                <ul>
+                    <li><a href="#"><img src="./img/main_cat_icon1.svg" alt=""><p>오늘만특가</p></a></li>
+                    <li><a href="#"><img src="./img/main_cat_icon2.svg" alt=""><p>추천</p></a></li>
+                    <li><a href="#"><img src="./img/main_cat_icon3.svg" alt=""><p>손글씨대회</p></a></li>
+                    <li><a href="#"><img src="./img/main_cat_icon4.svg" alt=""><p>이달의 책</p></a></li>
+                    <li><a href="#"><img src="./img/main_cat_icon5.svg" alt=""><p>바로 출판</p></a></li>
+                    <li><a href="#"><img src="./img/main_cat_icon6.svg" alt=""><p>오늘만특가</p></a></li>
+                    <li><a href="#"><img src="./img/main_cat_icon7.svg" alt=""><p>책그리고꽃</p></a></li>
+                    <li><a href="#"><img src="./img/main_cat_icon8.svg" alt=""><p>오늘의굿즈</p></a></li>
+                    <li><a href="#"><img src="./img/main_cat_icon9.svg" alt=""><p>APP혜택</p></a></li>
+                </ul>
+            </div>
             <div id="main_cat_add">
-                <img src="./img/main_cat_add.jpg" alt="">
+                <img src="./img/main_cat_add.jpg" alt="add" width="100%
+                ">
             </div>
         </div>
         <div id="today_pick">
@@ -143,9 +175,9 @@
                     <li><a href="#">교보only</a></li>
                 </ul>
             </div>
-            <div id="today_pick_sub1">
+            <div id="today_pick_sub">
                 <!-- Swiper -->
-                <div class="swiper todaypickSwiper">
+                <div class="swiper todaypickSwiper" id="today_pick_sub1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">Slide 1</div>
                         <div class="swiper-slide">Slide 2</div>
@@ -157,13 +189,11 @@
                         <div class="swiper-slide">Slide 8</div>
                         <div class="swiper-slide">Slide 9</div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+
                 </div>
-            </div>
-            <div id="today_pick_sub2">
+            
                 <!-- Swiper -->
-                <div class="swiper todaypickSwiper">
+                <div class="swiper todaypickSwiper2" id="today_pick_sub2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">Slide 1</div>
                         <div class="swiper-slide">Slide 2</div>
@@ -174,10 +204,10 @@
                         <div class="swiper-slide">Slide 7</div>
                         <div class="swiper-slide">Slide 8</div>
                         <div class="swiper-slide">Slide 9</div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    </div>                    
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
         <div id="add1">
@@ -216,7 +246,14 @@
             <div id="choice_title">
                 <h2>출판사에서 자신있게 추천해요</h2>
             </div>
-            <div id="choice_slider"></div>
+            <div id="choice_slider">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
         </div>
         <div id="mdpick">
             <div id="mdpick_title">
@@ -256,11 +293,7 @@
                 <img src="./img/add2.pic2.png" alt="">
             </div>
         </div>
-        <div id="AIpick">
-            <div id="AIpick_title"></div>
-            <div id="AIpick_list"></div>
-        </div>
-    </main>
+        </main>
     <footer>
         <div id="notice">
             <div id="notice_box">
@@ -271,7 +304,26 @@
             </div>
         </div>
         <div id="bottom">
-            <div id="bottom_main"></div>
+            <div id="bottom_main">
+                <img src="./img/bottom1.svg" alt="logo">
+                <img src="./img/bottom2.svg" alt="logo">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">대량구매서비스</a></li>
+                    <li><a href="#">협력사여러분</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">광고소개</a></li>
+                </ul>
+                <p>교보문고 | 서울특별시 종로구 종로1 | 대표이사:허정도 | 사업자등록번호:102-81-11670</p>
+                <p>대표전화(발신자부담):1544-1900(교보문고) - 1661-1112(핫트랙스) : FAX:0502-987-5711(지역번호 공통)</p>
+                <p>서울특별시 통신판매업신고번호:제653호</p>
+                <p>
+
+                </p>
+            </div>
             <div id="bottom_sub"></div>
         </div>
     </footer>
@@ -315,9 +367,19 @@
 
     <script>
         var swiper = new Swiper(".todaypickSwiper", {
+            loop : true,
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: "#today_pick_sub .swiper-button-next",
+                prevEl: "#today_pick_sub .swiper-button-prev",
+            },
+        });
+
+        var swiper = new Swiper(".todaypickSwiper2", {
+            slidesPerView:3,
+            loop : true,
+            navigation: {
+                nextEl: "#today_pick_sub .swiper-button-next",
+                prevEl: "#today_pick_sub .swiper-button-prev",
             },
         });
     </script>

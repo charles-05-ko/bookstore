@@ -1,54 +1,57 @@
-async function bookData() {
-    const REST_API_KEY = 'e0363994a1904a334af085cb39f9f060'
+async function fetchBooks(query) {
     const params = new URLSearchParams({
-        target: 'title',
-        query: '자바스크립트',
-        size: 50
+        target: "title",
+        query,
+        size: 10
     });
-    const url = `https://dapi.kakao.com/v3/search/book?${params}`
+    const url = `https://dapi.kakao.com/v3/search/book?${params}`;
 
-    try {
-        const response = await fetch(url, {
-            method: 'GET',
-            headers: {
-                Authorization: `KakaoAK ${REST_API_KEY}`
-            }
-        });
-        
-
-        if (!response.ok) {
-            throw new Error('HTTP오류 - 상태코드 : ' + response.status)
+    const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+            Authorization: "KakaoAK e0363994a1904a334af085cb39f9f060"
         }
+    });
 
-        const jsonData = await response.json();
-        console.log(jsonData)
+    if (!response.ok) {
+        throw new Error(`HTTP 오류: ${response.status}`);
+    }
 
-        const bookElement = document.querySelectorAll('#morebook_slider .swiper-slide');
+    return response.json();
+}
 
-        boxElements.forEach(swiper-slide, i) => {
-                    const doc = data.documents[i];
+async function bookData() {
+    try {
+        // query와 section ID를 매핑
+        const queries = [
+            { query: "자바스크립트", sectionId: "morebook_slider" },
+            { query: "정원", sectionId: "mdpick_slider" },
+            { query: "블리치", sectionId: "today_pick_sub1" },
+            { query: "블리치", sectionId: "today_pick_sub2" },
+        ];
 
-                    if (!doc) return; // 데이터가 부족할 경우 생략
+        for (const { query, sectionId } of queries) {
+            const data = await fetchBooks(query);
 
-                    // 요소 생성 및 추가
-                    box.innerHTML = `<img src="${data.documents[i].thumbnail}">
-                    <h3>${data.documents[i].title}</h3>
-                    <h6>${data.documents[i].authors}</h6>
-                    <p>${data.documents[i].contents.substring(0, 60)}</p>
-                    <button>click</button>
-                    `
-                });
-        
-        const imgElement = document.createElement('img')
-        imgElement.src = jsonData.documents[0].thumbnail
-        bookElement.appendChild(imgElement)
-        
-        const titleElement = document.createElement('h3')
-        titleElement.textContent = jsonData.documents[0].title
-        bookElement.appendChild(titleElement)
+            // 해당 섹션 내의 .box 요소 8개 선택
+            const section = document.querySelector(`#${sectionId}`);
+            const boxElements = section.querySelectorAll(".swiper-slide");
 
-    } catch(error) {
-        console.log('에러 발생', error)
+            boxElements.forEach((box, i) => {
+                const doc = data.documents[i];
+                if (!doc) return;
+
+                // 요소 생성 및 추가
+                box.innerHTML = `<img src="${doc.thumbnail}">
+                        <h3>${doc.title}</h3>
+                        <h6>${doc.authors}</h6>
+                        <p>${doc.contents.substring(0, 60)}</p>
+                        <button>click</button>
+                        `
+            });
+        }
+    } catch (error) {
+        console.error('에러 발생:', error);
     }
 }
 
