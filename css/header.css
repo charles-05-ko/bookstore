@@ -28,6 +28,72 @@ header {
     /* background-color: orange; */
 }
 
+#top_cat {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab {
+  position: relative;
+  margin-left: -12px; /* 탭끼리 살짝 겹치게 */
+  z-index: 1;
+}
+
+.tab:first-child {
+  margin-left: 0;
+}
+
+.tab a {
+  display: block;
+  min-width: 110px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0px 22px 0px 22px;
+}
+
+.tab.light a,
+.tab.gray a {
+  color: #666;
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+}
+
+.purple a {
+  background: #5b57b7;
+}
+
+.blue a {
+  background: #1f7be5;
+}
+
+.cyan a {
+  background: #14b7d7;
+}
+
+.orange a {
+  background: #f15a29;
+}
+
+.light a {
+  background: #727272;
+}
+
+/* 겹쳤을 때 오른쪽 탭이 위로 오게 */
+.tab:nth-child(1) { z-index: 6; }
+.tab:nth-child(2) { z-index: 5; }
+.tab:nth-child(3) { z-index: 4; }
+.tab:nth-child(4) { z-index: 3; }
+.tab:nth-child(5) { z-index: 2; }
+.tab:nth-child(6) { z-index: 1; }
+
 #header_top #top_cat ul {
     display: flex;
     justify-content: end;
@@ -49,7 +115,7 @@ header {
 #header_top #top_login ul {
     display: flex;
     justify-content: end;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #header_top #top_login ul li {
@@ -147,12 +213,13 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-#header_cat #hamburger {
-    width: 50px;
-    height: 90px;
-    background-color: purple;
+#header_cat #hamburger img {
+    width: 40px;
+    height: 40px;
+
 }
 
 #header_cat #header_cat_main {
@@ -164,7 +231,7 @@ header {
 }
 
 #header_cat #header_cat_main #header_cat_cat {
-    width: 700px;
+    width: 800px;
     height: 90px;
     display: flex;
     justify-content: center;
@@ -177,7 +244,7 @@ header {
 }
 
 #header_cat #header_cat_main #header_cat_cat ul li {
-    margin: 0 8px 0;
+    margin: 0 14px 0;
 }
 
 #header_cat #header_cat_main #header_mission {

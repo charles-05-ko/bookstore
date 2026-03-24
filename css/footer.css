@@ -2,7 +2,7 @@
 footer {
     width: 100%;
     height: 370px;
-    background-color: #ddd;
+    background-color: #f1f1f1;
 }
 
 /* footer notice */
@@ -10,6 +10,8 @@ footer {
     margin: 0 0 50px 0;
     display: flex;
     justify-content: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 #notice #notice_box {
@@ -49,6 +51,12 @@ footer {
 
 #bottom #bottom_sub {
     width: 400px;
-    height: 220px;
-    background-color: aliceblue;
+    height: 120px;
+    margin: 50px;
+    /* background-color: antiquewhite; */
+}
+
+#bottom #bottom_sub p {
+    font-size: 12px;
+    padding: 5px;
 }

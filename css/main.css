@@ -15,11 +15,14 @@ main {
     margin: 0 0 50px 0;
     display: flex;
     justify-content: space-between;
+
 }
 
 #main_slider #main_slider_add1 {
     width: 900px;
     height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .swiper {
@@ -30,7 +33,7 @@ main {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #444;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +61,7 @@ main {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #444;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,8 +104,9 @@ main {
 
 #main_cat #main_cat_add {
     width: 250px;
-    height: 100px;
-    /* background-color: blue; */
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 /* today_pick */
@@ -126,12 +130,12 @@ main {
     padding: 0 30px 0 0;
 }
 
-#today_pick #today_pick_title ul{
+#today_pick #today_pick_title ul {
     display: flex;
     font-size: 14px;
 }
 
-#today_pick #today_pick_title ul li{
+#today_pick #today_pick_title ul li {
     padding: 10px;
 }
 
@@ -145,7 +149,7 @@ main {
     content: "";
 }
 
-#today_pick #today_pick_sub{
+#today_pick #today_pick_sub {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -158,25 +162,30 @@ main {
 }
 
 #today_pick_sub1 .swiper {
-      width: 100%;
-      height: 100%;
-    }
+    width: 100%;
+    height: 100%;
+}
 
-    #today_pick_sub1 .swiper-wrapper .swiper-slide {
-      text-align: center;
-      font-size: 20px;
-      /* background: #444; */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+#today_pick_sub1 .swiper-wrapper .swiper-slide {
+    text-align: left;
+    font-size: 16px;
+    /* background: #444; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    #today_pick_sub1 .swiper-wrapper .swiper-slide img {
-      display: block;
-      width: 180px;
-      height: 100%;
-      object-fit: cover;
-    }
+#today_pick_sub1 .swiper-wrapper .swiper-slide h3 {
+    font-size: 20x;
+}
+
+
+#today_pick_sub1 .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 180px;
+    height: 100%;
+    object-fit: cover;
+}
 
 #today_pick #today_pick_sub2 {
     width: 400px;
@@ -184,11 +193,11 @@ main {
 }
 
 #today_pick_sub2 .swiper-wrapper .swiper {
-      width: 100%;
-      height: 100%;
-    }
+    width: 100%;
+    height: 100%;
+}
 
-    /* #today_pick_sub2 .swiper-wrapper .swiper-slide {
+/* #today_pick_sub2 .swiper-wrapper .swiper-slide {
       text-align: center;
       font-size: 18px;
       background: #444;
@@ -197,30 +206,56 @@ main {
       align-items: center;
     } */
 
-    #today_pick_sub2 .swiper-wrapper .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+#today_pick_sub2 .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#today_pick_sub .swiper-button-next {
+    right: -50px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+#today_pick_sub .swiper-button-prev {
+    left: -50px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+#today_pick_sub .swiper-button-prev svg,
+#today_pick_sub .swiper-button-next svg {
+    width: 50%;
+    height: 50%;
+    color: rgb(50, 50, 50);
+}
 
 /* add1 */
 #add1 {
     margin: 0 0 50px 0;
     display: flex;
     justify-content: space-between;
+    
 }
 
 #add1 #add1_pic1 {
     width: 590px;
     height: 180px;
-    border-radius: 20px;
-    object-fit: cover;
+    width: 590px;
+    height: 180px;
+border-radius: 10px;
+    overflow: hidden;
 }
 
 #add1 #add1_pic2 {
     width: 590px;
     height: 180px;
+    width: 590px;
+    height: 180px;
+border-radius: 10px;
+    overflow: hidden;
 }
 
 /* more book */
@@ -241,30 +276,50 @@ main {
 #morebook #morebook_slider {
     width: 1200px;
     height: 320px;
+    position: relative;
     /* background-color: tomato; */
 }
 
 #morebook_slider .swiper {
-      width: 100%;
-      height: 100%;
-      display: flex;
-    }
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
 
-    #morebook_slider .swiper-slide {
-      text-align: center;
-      font-size: 10px;
-      /* background: #444; */
-      /* display: flex; */
-      justify-content: center;
-      align-items: center;
-    }
+#morebook_slider .swiper-slide {
+    text-align: center;
+    font-size: 10px;
+    /* background: #444; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
 
-    #morebook_slider .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
+#morebook_slider .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#morebook_slider .swiper-button-next {
+    right: -50px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+#morebook_slider .swiper-button-prev {
+    left: -50px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+#morebook_slider .swiper-button-prev svg,
+#morebook_slider .swiper-button-next svg {
+    width: 50%;
+    height: 50%;
+    color: rgb(50, 50, 50);
+}
 
 /* choice book */
 #choice {
@@ -281,14 +336,37 @@ main {
 #choice #choice_slider {
     width: 1200px;
     height: 320px;
-    background-color: blue;
+    display: flex;
+    justify-content: space-between;
 }
 
-#choice #choice_slider .choice_box {
-    width: 300px;
+#choice #choice_slider .swiper-slide {
+    width: 180px;
     height: 320px;
-    background-color: tomato;
 }
+
+#choice_slider .swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#choice_slider .swiper-slide {
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#choice_slider .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
 
 /* md's pick */
 #mdpick {
@@ -320,29 +398,48 @@ main {
 #mdpick #mdpick_slider {
     width: 1200px;
     height: 280px;
+    position: relative;
     /* background-color: tomato; */
 }
 
 #mdpick_slider .swiper-wrapper .swiper {
-      width: 100%;
-      height: 100%;
-    }
+    width: 100%;
+    height: 100%;
+}
 
-    #mdpick_slider .swiper-wrapper .swiper-slide {
-      text-align: center;
-      font-size: 10px;
-      /* background: #444; */
-      /* display: flex; */
-      justify-content: center;
-      align-items: center;
-    }
+#mdpick_slider .swiper-wrapper .swiper-slide {
+    text-align: center;
+    font-size: 10px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
 
-    #mdpick_slider .swiper-wrapper .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
+#mdpick_slider .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#mdpick_slider .swiper-button-next {
+    right: -50px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+#mdpick_slider .swiper-button-prev {
+    left: -50px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+#mdpick_slider .swiper-button-prev svg,
+#mdpick_slider .swiper-button-next svg {
+    width: 50%;
+    height: 50%;
+    color: rgb(50, 50, 50);
+}
 
 /* add2 */
 #add2 {
@@ -354,29 +451,17 @@ main {
 #add2 #add2_pic1 {
     width: 590px;
     height: 180px;
-    background-color: blue;
+    width: 590px;
+    height: 180px;
+border-radius: 10px;
+    overflow: hidden;
 }
 
 #add2 #add2_pic2 {
     width: 590px;
     height: 180px;
-    background-color: blue;
-}
-
-/* AI pick */
-#AIpick {
-    display: flex;
-    justify-content: space-between;
-}
-
-#AIpick #AIpick_title {
-    width: 250px;
-    height: 300px;
-    background-color: tomato;
-}
-
-#AIpick #AIpick_list {
-    width: 850px;
-    height: 300px;
-    background-color: tomato;
+    width: 590px;
+    height: 180px;
+border-radius: 10px;
+    overflow: hidden;
 }
