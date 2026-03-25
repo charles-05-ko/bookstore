@@ -26,9 +26,9 @@ async function bookData() {
         const queries = [
             { query: "자바스크립트", sectionId: "morebook_slider" },
             { query: "정원", sectionId: "mdpick_slider" },
-            { query: "블리치", sectionId: "today_pick_sub1" },
-            { query: "블리치", sectionId: "today_pick_sub2" },
-            { query: "블리치", sectionId: "choice_slider" },
+            { query: "소설", sectionId: "today_pick_sub1" },
+            { query: "소설", sectionId: "today_pick_sub2" },
+            { query: "세계문학", sectionId: "choice_slider" },
         ];
 
         for (const { query, sectionId } of queries) {
@@ -45,8 +45,6 @@ async function bookData() {
                 // 요소 생성 및 추가
                 box.innerHTML = `<img src="${doc.thumbnail}">
                         <h3>${doc.title}</h3>
-                        <h6>${doc.authors}</h6>
-                        <p>${doc.contents.substring(0, 60)}</p>
                         `
             });
         }

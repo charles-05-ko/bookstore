@@ -12,7 +12,7 @@ main {
 #main_slider {
     width: 1200px;
     height: 400px;
-    margin: 0 0 50px 0;
+    margin: -30px 0 50px 0;
     display: flex;
     justify-content: space-between;
 
@@ -49,8 +49,10 @@ main {
 #main_slider #main_slider_add2 {
     width: 250px;
     height: 400px;
-    display: flex;
-    /* background-color: tomato; */
+    /* display: flex; */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(240, 240, 240);
 }
 
 #main_slider_add2 .swiper {
@@ -72,6 +74,28 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.add2_textbox {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.add2_textbox div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add2_textbox div:not(:first-of-type) {
+    opacity: 0;
 }
 
 /* main category */
@@ -171,7 +195,7 @@ main {
     font-size: 16px;
     /* background: #444; */
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
@@ -330,7 +354,7 @@ border-radius: 10px;
 #choice #choice_title {
     width: 1200px;
     height: 40px;
-    margin: 0 0 30px 0;
+    margin: 0 0 10px 0;
 }
 
 #choice #choice_slider {

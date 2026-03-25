@@ -28,8 +28,8 @@
                     <li class="tab cyan"><a href="#">sam</a></li>
                     <li class="tab orange"><a href="#">핫트랙스</a></li>
                     <li class="tab light"><a href="#">스토리</a></li>
-                    <li class="tab gray"><a href="#">브랜드 더보기</a></li>
                 </ul>
+                <li class="tab gray"><a href="#">브랜드 더보기</a></li>
             </div>
             <div id="top_login">
                 <ul>
@@ -58,7 +58,7 @@
                     <input type="text" class="search-input" placeholder="스마트폰만 봤던 13살 아들을 바꾼 그 책!">
 
                     <button class="search-btn" type="button" aria-label="검색">
-                        🔍
+                        <img src="./img/find.png" alt="logo">
                     </button>
                 </div>
             </div>
@@ -125,7 +125,6 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="./img/main_slider_add2_1.jpg" alt="add">
-                            <h3>안녕</h3>
                         </div>
                         <div class="swiper-slide">
                             <img src="./img/main_slider_add2_2.jpg" alt="add">
@@ -141,6 +140,29 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
+                </div>
+                <div class="add2_textbox">
+                    <div>
+                        <p>책 읽을 때 꼭 필요해요</p>
+                        <h3>투명 책 받침대</h3>
+                    </div>
+                    <div>
+                        <p>최신트렌드</p>
+                        <h3>오늘의 책 알아보기</h3>
+                    </div>
+                    <div>
+                        <p>화제의 고전 명작</p>
+                        <h3>더 기버 발매</h3>
+                    </div>
+                    <div>
+                        <p>이야기로 세상을 바꾸는 법</p>
+                        <h3>마스터플롯</h3>
+                    </div>
+                    <div>
+                        <p>귀여운 디자인</p>
+                        <h3>접이식 UV방지 양산</h3>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -347,99 +369,22 @@
                 </p>
             </div>
             <div id="bottom_sub">
-                <select name="" id="Family"><option value="">Family Site</option></select>
-                <select name="" id="SNS"><option value="">SNS바로가기</option></select>
+                <select name="" id="Family">
+                    <option value="">Family Site</option>
+                </select>
+                <select name="" id="SNS">
+                    <option value="">SNS바로가기</option>
+                </select>
                 <p>토스페이먼츠 구매안전서비스</p>
                 <p>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 토스페이먼츠의 구매안전서비스를 이용하실 수 있습니다.</p>
             </div>
         </div>
     </footer>
 
-    <script></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/book.js"></script>
-
-    <script>
-        var swiper = new Swiper(".mainadd1Swiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            centeredSlides: true,
-            loop: true,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-
-    <script>
-        var swiper = new Swiper(".mainadd2Swiper", {
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
-    </script>
-
-    <script>
-        var swiper = new Swiper(".todaypickSwiper", {
-            loop: true,
-            navigation: {
-                nextEl: "#today_pick_sub .swiper-button-next",
-                prevEl: "#today_pick_sub .swiper-button-prev",
-            },
-        });
-
-        var swiper = new Swiper(".todaypickSwiper2", {
-            slidesPerView: 3,
-            loop: true,
-            navigation: {
-                nextEl: "#today_pick_sub .swiper-button-next",
-                prevEl: "#today_pick_sub .swiper-button-prev",
-            },
-        });
-    </script>
-
-    <script>
-        var swiper = new Swiper(".morebookSwiper", {
-            slidesPerView: 6,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: "#morebook_slider .swiper-button-next",
-                prevEl: "#morebook_slider .swiper-button-prev",
-            },
-        });
-    </script>
-
-    <script>
-        var swiper = new Swiper(".mdpickSwiper", {
-            slidesPerView: 6,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: "#mdpick_slider .swiper-button-next",
-                prevEl: "#mdpick_slider .swiper-button-prev",
-            },
-        });
-    </script>
 
 </body>
 
